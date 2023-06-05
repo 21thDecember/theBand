@@ -19,6 +19,7 @@ header {
     height: 46px;
     background-color: #000;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -98,6 +99,30 @@ header .search-icon {
     padding-top: 50%;
     background: url(/assets/img/chicago.jpg) top center / cover no-repeat;
 }
+
+#slider {
+    position: relative;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.text-heading {
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.text-description {
+    margin: 15px 0;
+}
+
 
 #content {
 
