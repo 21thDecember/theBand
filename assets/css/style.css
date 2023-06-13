@@ -217,6 +217,129 @@ header .search-icon {
     margin-right: 16px;
 }
 
+.tour-section .places-list {
+    margin: 32px -8px;
+    overflow: hidden;
+}
+
+.tour-section .place-item {
+    width: 33%;
+    float: left;
+    padding: 0 8px;
+}
+
+.tour-section .place-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tour-section .place-item img:hover {
+    opacity: 0.7;
+}
+
+.tour-section .place-item .place-body {
+    background-color: #fff;
+    padding: 0 16px;
+    overflow: hidden;
+}
+
+.tour-section .place-item .place-heading {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.tour-section .place-item .place-time {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.tour-section .place-item .place-desc {
+    margin: 15px 0;
+}
+
+.tour-section .place-item .buy-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+.tour-section .place-item .buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.info-section {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.info-section .admin-info {
+    width: 50%;
+    font-size: 18px;
+    float: left;
+}
+
+.info-section .admin-info i {
+    width: 30px;
+}
+
+.info-section .user-info {
+    float: left;
+    width: 50%;
+}
+
+.name-email {
+
+    margin: 0 -16px 8px -16px;
+    /* overflow: hidden; */
+    padding: 0 8px;
+}
+
+.name-email::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.name-email::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.name {
+    float: left;
+    padding: 0 8px;
+    width: 50%;
+}
+
+.email {
+    float: left;
+    padding: 0 8px;
+    width: 50%;
+}
+
+.info-section .user-info input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.btn-send {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px 0;
+    text-decoration: none;
+    font-size: 15px;
+}
 footer {
 
 }
