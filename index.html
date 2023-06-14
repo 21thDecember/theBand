@@ -82,7 +82,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-btn">Buy tickets</a>
+                                <a class="buy-btn">Buy tickets</a>
                             </div>
                         </div>
                         <div class="place-item">
@@ -91,7 +91,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-btn">Buy tickets</a>
+                                <a class="buy-btn">Buy tickets</a>
                             </div>
                         </div>
                         <div class="place-item">
@@ -100,7 +100,7 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-btn">Buy tickets</a>
+                                <a class="buy-btn">Buy tickets</a>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
             <div class="modal-header">
                 <i class="fa-solid fa-suitcase"></i>
                 Tickets
-                <div class="modal-close">
+                <div class="modal-close js-modal-close">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                     <i class="fa-solid fa-check"></i>
                 </div>
 
-                <div class="close-btn">
+                <div class="close-btn js-modal-close">
                     Close
                     <i class="fa-sharp fa-solid fa-xmark"></i>
                 </div>
@@ -191,4 +191,29 @@
         </div>
     </div>
 </body>
+<script>
+    var modal = document.querySelector(".modal-container");
+    var buyBtns = document.querySelectorAll(".buy-btn")
+    var closeBtns = document.querySelectorAll(".js-modal-close")
+    for(const buyBtn of buyBtns) {
+        buyBtn.addEventListener('click',function(){
+            modal.classList.add('open');
+        })
+    }
+
+    for(const closeBtn of closeBtns) {
+        closeBtn.addEventListener('click',function(){
+            modal.classList.remove('open');
+        })
+    }
+
+    modal.addEventListener('click',function(){
+            modal.classList.remove('open');
+        })
+    
+    var modalContainer = document.querySelector(".modal");
+    modalContainer.addEventListener('click',function(event){
+        event.stopPropagation()
+    })
+</script>
 </html>
